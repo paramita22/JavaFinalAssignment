@@ -1,0 +1,30 @@
+
+Rules of creating a Constructor:
+1. Contructors are methods with the same name as the class
+2. Constructors do not have any return type, not even void
+3. Constructors are default, non-parametrised, and parametrised
+4. If no constructor is declared by the user, it is created by the jvm at runtime, known as default constructors which are non-parametrised in nature
+5. Once a non-parametrised constructoer is created, jvm does not create any default constructor
+
+
+
+
+
+
+The program on Parent-Child class::
+
+1> Output : When method display() is in parent class
+
+I am the Parent
+integer=10, float= 23.4 , String= Home
+I am the Child
+integer=30, float= 4.4 , String= Child call
+Variables of the parent class are: Integer= 10, Float= 23.4, String= Home
+
+2> Output : When method display() is in child class it overrides the display() method in parent at runtime
+
+I am the Parent
+integer=10, float= 23.4 , String= Home
+I am the Child
+integer=30, float= 4.4 , String= Child call
+Variables of the child class are: Integer= 30, Float= 4.4, String= Child call
